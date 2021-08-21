@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/8f10ff1119.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">  
+  <title>Tip Calculator</title>
+</head>
+<body>
+
+  <div class="logo">
+    <span class="logo__first"">SPLI</span>
+    <span class="logo__second">TTER</span>
+  </div>
+
+  <div class="calculator">
+    <div class="calculator__form">
+      <label for="bill">Bill</label>
+      <div id="bill" class="calculator__group">
+        <span class="calculator__group-i icon">$</span>
+        <input class="calculator__group-input" placeholder="0" type="number" />
+      </div>
+      <label for="tip">Select Tip %</label>
+      <div id="tip" class="calculator__group">
+        <div class="calculator__group-tips">
+          <div class="calculator__group-tips-amount selected">5%</div>
+          <div class="calculator__group-tips-amount">10%</div>
+          <div class="calculator__group-tips-amount">15%</div>
+          <div class="calculator__group-tips-amount">25%</div>
+          <div class="calculator__group-tips-amount">50%</div>
+          <div class="calculator__group-tips-amount-custom">
+            Custom
+            <input type="text" class="calculator__group-tips-amount-custom-input">
+          </div>
+        </div>
+      </div>
+      <label for="people">Number of People</label>
+      <div id="people" class="calculator__group">
+        <i class="fas fa-user"></i>
+        <input class="calculator__group-input" placeholder="1" type="number" value="1" />
+      </div>
+    </div>
+    <div class="calculator__results">
+      <div class="calculator__results-values">
+        <div class="calculator__result calculator__results-tip">
+          <div class="calculator__results-label">
+            <p>Tip Amount</p>
+            <span>/ person</span>
+          </div>
+          <div id="tip-amount" class="calculator__results-amount">$0.00</div>
+        </div>
+        <div class="calculator__result calculator__results-total">
+          <div class="calculator__results-label">
+            <p>Total</p>
+            <span>/ person</span>
+          </div>
+          <div id="total-amount" class="calculator__results-amount">$0.00</div>
+        </div>
+      </div>
+      <button class="calculator__results-btn disabled">Reset</button>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
